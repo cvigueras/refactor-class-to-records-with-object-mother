@@ -1,6 +1,6 @@
 ﻿namespace ClassToRecords.App.Tests
 {
-    public class UserShould
+    public class HomeShould
     {
         private Home home;
         [SetUp]
