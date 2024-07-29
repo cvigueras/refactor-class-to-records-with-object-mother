@@ -1,4 +1,6 @@
-﻿namespace ClassToRecords.App.Tests
+﻿using Microsoft.VisualStudio.TestPlatform.ObjectModel;
+
+namespace ClassToRecords.App.Tests
 {
     public class HomeShould
     {
@@ -7,6 +9,15 @@
         public void Setup()
         {
             home = new Home();
+        }
+
+        [Test]
+        public void user1_must_be_equals_user2()
+        {
+            var user1 = UserMother.UserUnderEighteen();
+            var user2 = UserMother.UserUnderEighteen();
+
+            Assert.AreEqual(user1, user2);
         }
 
         [Test]
