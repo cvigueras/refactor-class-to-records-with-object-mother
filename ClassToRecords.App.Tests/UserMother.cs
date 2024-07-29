@@ -11,22 +11,22 @@ namespace ClassToRecords.App.Tests
     {
         public static User UserUnderEighteen()
         {
-            return User.Create("Pepito Grillo", 16);
+            return new User("Pepito Grillo", 16);
         }
 
         public static User UserOverEighteenUnderThirty()
         {
-            return User.Create("Pepito Grillo", 29);
+            return new User("Pepito Grillo", 29);
         }
 
         public static User UserOverThirtyUnderSixtyFive()
         {
-            return User.Create("Pepito Grillo", 46);
+            return new User("Pepito Grillo", 46);
         }
 
         public static User UserOverSixtyFive()
         {
-            return User.Create("Pepito Grillo", 67);
+            return new User("Pepito Grillo", 67);
         }
     }
 }
